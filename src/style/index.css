@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 :root {
+  /* Colors */
   --theme-background-color:hsl(207, 26%, 17%);
   --elements-background-color:hsl(209, 23%, 22%);
   --shadow-elements:hsla(208, 25%, 13%, 0.493);
@@ -7,11 +8,55 @@
   --theme-input: hsl(0, 0%, 100%);
   /* input text? */
   --selectable-card-color:#234455;
+  --side-vertical-bar: #343434;
+  --container-background: #FFF;
+  --tittle-bar-color:#727272;
+  --letter-accent-blue: #6672FB;
+  /* Sizes */
   --menu-font-size: 18px;
+  --vertical-menu-width: 85px;
+  --horizontal-top-bar-height: 70px;
   font-family: 'Open Sans','Nunito Sans', sans-serif;
   font-size: 33px;
   font-weight: 300;
   /* color: var(--theme-text); */
+}
+
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.page-content .page-content__main-container {
+  background-color: #cacaca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-left: var(--vertical-menu-width);
+}
+
+.page-content .component-container {
+  background-color: #FFF;
+  border-radius: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 9px;
+  height: var(--horizontal-top-bar-width);
 }
 
 .toggleswitch[type="checkbox"] {
@@ -59,10 +104,11 @@
 }
 
 .menu-container {
-  background-color: #343434;
-  width: 85px;
+  background-color: var(--side-vertical-bar);
+  width: var(--vertical-menu-width);
   height: 100vh;
-  overflow: visible;
+  overflow: hidden;
+  position: absolute;
   -webkit-transition: width 300ms;
   transition: width 300ms;
 }
@@ -124,5 +170,51 @@
 .menuitem-container__icon--header {
   width: 59px;
   margin: 12.5px;
+}
+
+.topbar-container {
+  height: var(--horizontal-top-bar-height);
+  background-color: var(--container-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar-container__tittle {
+  color: var(--tittle-bar-color);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 25px;
+}
+
+.topbar-container__user {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--letter-accent-blue);
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar-container__user-pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 10px;
 }
 /*# sourceMappingURL=index.css.map */

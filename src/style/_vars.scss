@@ -1,6 +1,7 @@
 
 :root{
         
+    /* Colors */
     --theme-background-color:hsl(207, 26%, 17%);
     --elements-background-color:hsl(209, 23%, 22%);
     --shadow-elements:hsla(208, 25%, 13%, 0.493);
@@ -11,10 +12,24 @@
     
     --selectable-card-color:#234455;
 
+    --side-vertical-bar: #343434;
+
+    --container-background: #FFF;
+
+    --tittle-bar-color:#727272;
+    --letter-accent-blue: #6672FB;
+
+    /* Sizes */
     --menu-font-size: 18px;
+    --vertical-menu-width: 85px;
+    --horizontal-top-bar-height: 70px;
+
+
 
     font-family: 'Open Sans','Nunito Sans', sans-serif;
     font-size:33px;
     font-weight: 300;
+
+    
     /* color: var(--theme-text); */
 }

@@ -1,5 +1,8 @@
 @import './vars';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import '../app';
 @import '../utility/toggle_switch';
 @import '../menu_vertical/menu_vertical';
-
+@import '../horizontal_top_bar/horizontal_top_bar';
+@import '../utility/component_container';

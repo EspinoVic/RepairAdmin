@@ -1,9 +1,9 @@
 .menu-container{
-    background-color:#343434;
-    width: 85px;
+    background-color:var(--side-vertical-bar);
+    width:  var(--vertical-menu-width);
     height: 100vh;
-    overflow: visible;
-
+    overflow: hidden;
+    position: absolute;
     transition:width 300ms;
     &:hover{
         width: 246px;
