@@ -3,7 +3,7 @@
     position: relative;
 
     & .page-content__main-container{
-        background-color:#cacaca;
+        background-color:var(--page-content-background);
         display:flex;
         flex-direction: column;
         width: 100%;
@@ -11,12 +11,12 @@
         margin-left: var(--vertical-menu-width);
     }
     & .component-container{
-        background-color:#FFF;
+        background-color: var(--container-background);
         border-radius: 1px;
         display:flex;
         justify-content:space-between;
         align-items: center;
         margin:9px;
-        height: var( --horizontal-top-bar-width);
+       
     }
 }

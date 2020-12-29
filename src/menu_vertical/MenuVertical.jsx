@@ -15,7 +15,7 @@ function MenuVertical(props){
             <MenuItem content="NIR" icon={PcIcon} isHeader={true}></MenuItem>        
             <MenuItem content="Citas" icon={CitasIcon}></MenuItem>
             <MenuItem content="Reparaciones" icon={ReparacionesIcon}></MenuItem>
-            <MenuItem content="Estadisticas" icon={EstadisticasIcon}></MenuItem>
+            <MenuItem content="Estadísticas" icon={EstadisticasIcon}></MenuItem>
             <MenuItem content={<ToggleSwitch text="asd"/>} icon={LunaIcon}></MenuItem>
         </div>
     );
