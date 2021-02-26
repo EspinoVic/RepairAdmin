@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import VerticalPicker from './VerticalPicker'
-import { animated, useTransition } from "react-spring";
 
-function DatePicker({show,...props}) {
+function DatePicker({style,...props}) {
 
   const [dayPicked,setDayPicked] = useState(1);
   const [monthPicked,setMonthPicked] = useState([1,meses[0]]);
@@ -24,24 +23,14 @@ function DatePicker({show,...props}) {
 
   const daysItemsToDisplay = getDaysAmountForMonth(monthPicked[0],yearPicked);
 
-  const transitions = useTransition(show, p=>p, {
-    from: {  opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-    })
-    
-
-    return (
-      transitions.map(
-        ({props:vic,key,item})=>
-        item&&
-        <animated.div className="datepicker-container" style={vic} onClick={(e)=>{e.stopPropagation()} }>
+ 
+    return (    
+        <div style = {style} className="datepicker-container" onClick={(e)=>{e.stopPropagation()} }>
           <div className="datepicker-container__selector-placeholder"></div>
           <VerticalPicker data={daysItemsToDisplay} onScrollPicker={handleScrollDayValue}></VerticalPicker>
           <VerticalPicker data={meses} onScrollPicker={handleScrollMonthValue}></VerticalPicker>          
           <VerticalPicker data={generateYears()} onScrollPicker={handleScrollYearValue}></VerticalPicker>        
-        </animated.div>  
-      )
+        </div>      
            
     )      
 

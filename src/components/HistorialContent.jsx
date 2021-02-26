@@ -9,7 +9,6 @@ import CalendarButton from "../utility/components/CalendarButton";
 
 import Table from "../utility/components/Table";
 import { ReactComponent as FilterIcon } from "../icons/filter_icon.svg";
-import { ReactComponent as CalendarIcon } from "../icons/calendar_icon.svg";
 import { ReactComponent as ChevronIcon } from "../icons/chevron.svg";
 
 const headers = [
@@ -34,7 +33,6 @@ function HistorialContent(props) {
               
               <CalendarButton
                 tittle="Desde"
-                icon={<CalendarIcon />}
               ></CalendarButton>
 
               <ContextButton
@@ -42,9 +40,10 @@ function HistorialContent(props) {
                 icon={<ChevronIcon />}
               ></ContextButton>
 
-              <ContextButton tittle="Hasta" icon={<CalendarIcon />}>
-                <DatePicker />
-              </ContextButton>
+              <CalendarButton
+                tittle="Desde"
+              ></CalendarButton>
+
             </ContextContainer>
           </ContextButton>
         </div>
