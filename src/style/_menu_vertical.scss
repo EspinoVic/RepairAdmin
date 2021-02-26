@@ -5,6 +5,7 @@
     overflow: hidden;
     position: absolute;
     transition:width 300ms;
+    z-index: var(--side-menu-z-index);
     &:hover{
         width: 246px;
     }

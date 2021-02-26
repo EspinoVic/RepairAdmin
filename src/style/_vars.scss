@@ -1,36 +1,45 @@
+:root {
+  /* Colors */
+  --theme-background-color: hsl(207, 26%, 17%);
+  --elements-background-color: hsl(209, 23%, 22%);
+  --shadow-elements: hsla(208, 25%, 13%, 0.493);
 
-:root{
-        
-    /* Colors */
-    --theme-background-color:hsl(207, 26%, 17%);
-    --elements-background-color:hsl(209, 23%, 22%);
-    --shadow-elements:hsla(208, 25%, 13%, 0.493);
+  --theme-text: hsl(0, 0%, 100%);
+  --theme-input: hsl(0, 0%, 100%); /* input text? */
 
-    
-    --theme-text:hsl(0, 0%, 100%);
-    --theme-input: hsl(0, 0%, 100%);/* input text? */
-    
-    --selectable-card-color:#234455;
+  --selectable-card-color: #234455;
 
-    --side-vertical-bar: #343434;
+  --side-vertical-bar: #343434;
 
-    --page-content-background: #dfdfdf;
-    --container-background: #FFF;
+  --page-content-background: #dfdfdf;
+  --container-background: #fff;
 
-    --tittle-top-bar-color:#727272;
-    --letter-accent-blue: #3d4eff;
+  --tittle-top-bar-color: #727272;
+  --letter-accent-blue: #3d4eff;
 
-    /* Sizes */
-    --menu-font-size: 18px;
-    --vertical-menu-width: 85px;
-    --horizontal-top-bar-height: 70px;
+  --hint-text-box-color: #999898;
+
+  --svg-icons-color: #727272;
+
+  /* Sizes */
+  --menu-font-size: 18px;
+  --vertical-menu-width: 85px;
+  --horizontal-top-bar-height: 70px;
+
+  --font-size-normal-text: 13px;
+  --font-size-prior-text: 14px;
+  --font-size-tittle-subwidow-text: 22px;
+  --font-size-subtittle-subwidow-text: 18px;
+
+  font-family: "Open Sans", "Nunito Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+
+  /* Z indexes */
+  --side-menu-z-index: 1000;
+  --context-menu: 900;
 
 
 
-    font-family: 'Open Sans','Nunito Sans', sans-serif;
-    font-size:33px;
-    font-weight: 300;
-
-    
-    /* color: var(--theme-text); */
+  /* color: var(--theme-text); */
 }

@@ -1,0 +1,8 @@
+.icon_app svg{
+    width:20px;
+    height: 20px;
+    margin: 5px;
+}
+.icon_app svg path, .icon_app svg text{
+    fill: var(--svg-icons-color);
+}

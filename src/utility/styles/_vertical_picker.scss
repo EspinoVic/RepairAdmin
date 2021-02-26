@@ -1,0 +1,28 @@
+
+.verticalpicker-container{
+    position: relative;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    &> div {
+        cursor: default;
+        position: static;
+        width: 50px;
+        max-height: 25px;
+        height: 25px;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #616161;
+        font-weight: 500;
+        font-size: 16px;
+        /* background-color: rgb(43, 255, 0); */
+    
+      }
+      
+}

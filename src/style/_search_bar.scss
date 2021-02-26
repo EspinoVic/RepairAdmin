@@ -1,0 +1,18 @@
+.searchbar-container{
+    background-color: var(--page-content-background);
+    display:flex;
+    align-items: center;
+    border-radius: 3px;
+    width:491px;
+    margin: 5px;
+    
+}
+.searchbar{
+    outline: none;
+    border-style: none;
+    height: 40px;
+    border-radius: 5%;
+    background:none;
+    color: var(--svg-icons-color);
+    width: 100%;
+}

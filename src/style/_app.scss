@@ -1,0 +1,18 @@
+#root{
+    /* display: flex; */
+    /* stretched */
+    height: 100vh;
+}
+.page-content {
+  display: flex;
+  flex-direction:column;
+  justify-content: stretch;
+  height:100vh;
+  &__main-container {
+    background-color: /* blue */var(--page-content-background);
+    flex-grow: 1;
+    margin-left: var(--vertical-menu-width);
+    display: flex;
+    flex-direction: column;
+  }
+}

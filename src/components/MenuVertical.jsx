@@ -1,11 +1,11 @@
 import React from 'react';
 
-import ToggleSwitch from '../utility/ToggleSwitch'
-import CitasIcon from './citasIcon.png';
-import EstadisticasIcon from './estadisticasIcon.png';
-import ReparacionesIcon from './reparacionesIcon.png';
-import LunaIcon from './lunaIcon.png';
-import PcIcon from './pcIcon_green.png';
+import ToggleSwitch from '../utility/components/ToggleSwitch'
+import CitasIcon from '../icons/citasIcon.png';
+import EstadisticasIcon from '../icons/estadisticasIcon.png';
+import ReparacionesIcon from '../icons/reparacionesIcon.png';
+import LunaIcon from '../icons/lunaIcon.png';
+import PcIcon from '../icons/pcIcon_green.png';
 
 
 function MenuVertical(props){
