@@ -13,11 +13,15 @@
 @import '../utility/styles/toggle_switch';
 @import '../utility/styles/date_picker';
 @import '../utility/styles/vertical_picker';
+@import '../utility/styles/_resumen_indicatos';
+
+
 
 /* Components */
 @import './app';
 @import 'menu_vertical';
 @import 'horizontal_top_bar';
 @import 'historial_content';
+@import 'resumen_container';
 @import 'search_bar';
 

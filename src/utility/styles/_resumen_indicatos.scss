@@ -1,0 +1,17 @@
+.resumen-indicator{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: 0 0 auto;
+    width:80px;
+    padding:3px;
+    &__tittle{
+        font-size: 12px; 
+        margin-bottom: 4px;
+    }
+
+    &__indicator{
+       font-size: 28px; 
+    }
+}

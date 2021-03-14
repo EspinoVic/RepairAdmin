@@ -6,6 +6,8 @@ import ContextButton from "../utility/components/ContextButton";
 import DatePicker from "../utility/components/DatePicker";
 import ContextContainer from "../utility/components/ContextContainer";
 import CalendarButton from "../utility/components/CalendarButton";
+import ResumenContainer from './ResumenContainer';
+
 
 import Table from "../utility/components/Table";
 import { ReactComponent as FilterIcon } from "../icons/filter_icon.svg";
@@ -50,6 +52,10 @@ function HistorialContent(props) {
         {/*  <Table headersName={headers} rowsData={repairs}></Table> */}
         <Table headersName={headers} rowsData={repairs}></Table>
       </div>
+    
+      <ResumenContainer></ResumenContainer>
+    <div >asd</div>
+
     </div>
   );
 }
@@ -546,7 +552,7 @@ const repairs = [
     state: <StateRepair state={"Pendiente"}></StateRepair>,
   },
   {
-    noOrden: 111,
+    noOrden: 999,
     dateInt: "101121",
     client: "Pedro Green",
     phone: "1234567890",

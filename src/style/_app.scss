@@ -8,9 +8,10 @@
   flex-direction:column;
   justify-content: stretch;
   height:100vh;
+  
   &__main-container {
     background-color: /* blue */var(--page-content-background);
-    flex-grow: 1;
+    flex: 1 0 auto;
     margin-left: var(--vertical-menu-width);
     display: flex;
     flex-direction: column;

@@ -1,0 +1,19 @@
+.resumen-container {
+  margin: 8px;
+  padding: 8px;
+  background-color: var(--container-background);
+  /* width:100px; */
+  display: flex;
+  flex-flow: row wrap;
+ /*  height: 30%; */
+  width: calc(30% - 32px);
+  max-width: 30%;
+  align-content: stretch;
+  align-items: flex-start;
+  justify-content:space-evenly;
+  &__title {
+    width:100%;
+    font-size: 22px;
+    margin:0 8px 8px 8px;
+  }
+}
